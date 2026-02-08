@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Жанайдар Алмаз</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Портфолио</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Главная</a></li>
+                <li><a href="#skills" class="nav-link">Навыки</a></li>
+                <li><a href="#education" class="nav-link">Образование</a></li>
+                <li><a href="#achievements" class="nav-link">Достижения</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#contacts" class="nav-link">Контакты</a></li>
+            </ul>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="full-height">
+        <div class="container">
+            <div class="home-content">
+                <div class="text">
+                    <h1 class="animate-text">Привет, я <span class="highlight">Алмаз</span></h1>
+                    <div class="typing-container">
+                        <span id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p>Студент группы CS - 302(c). Изучаю веб-разработку, но больше тянет к Data Analytics.</p>
+                    <p>В свободное время изучаю аналитику данных, чистаю книги и т.д.</p>
+                    <a href="#contacts" class="btn">Связаться со мной</a>
+                </div>
+                <div class="avatar">
+                    <img src="assets/images/avatar.jpg" alt="Моя аватарка">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Навыки</h2>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Hard Skills</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>HTML/CSS</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React Native</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Git</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="tags">
+                        <span class="tag">Командная работа</span>
+                        <span class="tag">Критическое мышление</span>
+                        <span class="tag">Коммуникабельность</span>
+                        <span class="tag">Тайм-менеджмент</span>
+                        <span class="tag">Решение проблем</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-globe"></i> Языки</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Казахский (родной)</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Английский (B1)</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Русский (C2)</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">Образование</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 — 2023</div>
+                    <div class="timeline-content">
+                        <h3>Павлодарский высший Экономиеческий колледж</h3>
+                        <p class="degree">4 курса</p>
+                        <p>Специализация: Вычислительная техника и Программное обеспечение.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 — настоящее время</div>
+                    <div class="timeline-content">
+                        <h3>Торайгыров Университет</h3>
+                        <p class="degree">Бакалавриат Computer Science</p>
+                        <p>Изучение программирования.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="container">
+            <h2 class="section-title">Достижения</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Амулет на WorldSkills 2022</h3>
+                    <p class="date">Октябрь 2022</p>
+                    <p>Разрабатывали мобильное приложение с несколькими функциями.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Красный диплом по окончанию колледжа</h3>
+                    <p class="date">Май 2023</p>
+                    <p>Окончание колледжа с красным дипломом.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Создание интересных проектов вовремя университета</h3>
+                    <p class="date">Настоящее время</p>
+                    <p>Разработка и реализация проектов в рамках учебного процесса.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project1.jpg" alt="Скриншот проекта E-Commerce Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3>3D Солнечная система</h3>
+                        <p>Сайт с 3D моделью солнечной системы, интерактивными планетами и образовательным контентом. Реализован на JS, Three.js.
+                        </p>
+                        <p>Реализована панель, планеты, прослушивание фоновой музыки.</p>
+                        <div class="tech-tags">
+                            <span>JavaScript</span>
+                            <span>Three.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/username/project1" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://project1-demo.vercel.app" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project2.jpg" alt="Скриншот проекта Task Manager">
+                    </div>
+                    <div class="project-content">
+                        <h3>Онлайн книга по философии</h3>
+                        <p>Веб-старница для чтения онлайн-книги по философии на казахском с возможностью прохождения тестов.</p>
+                        <p>Интеграция заданий, лекции, темная тема.</p>
+                        <div class="tech-tags">
+                            <span>JS</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/username/project2" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://project2-demo.netlify.app" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project3.png" alt="Скриншот проекта Weather App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Forecast</h3>
+                        <p>Приложение для прогноза погоды с детальной информацией по городам, картами и уведомлениями.</p>
+                        <p>Использует OpenWeather API, геолокацию, оффлайн-режим.</p>
+                        <div class="tech-tags">
+                            <span>JavaScript</span>
+                            <span>CSS3</span>
+                            <span>REST API</span>
+                            <span>PWA</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/username/project3" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://weather-app-demo.glitch.me" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Свяжитесь со мной</h3>
+                    <p><i class="fas fa-envelope"></i> almazzhanaidar@123mail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Павлодар, Казахстан</p>
+                    <div class="social-links">
+                        <a href="https://github.com/username" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/username" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://t.me/username" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://hackerrank.com/username" target="_blank">
+                            <i class="fab fa-hackerrank"></i>
+                        </a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить сообщение</button>
+                    <div id="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Жанайдар Алмаз. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
