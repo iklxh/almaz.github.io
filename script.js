@@ -1,4 +1,3 @@
-// Меню навигации
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
@@ -7,14 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
         navLinks.classList.toggle('active');
     });
 
-    // Закрытие меню при клике на ссылку
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
         });
     });
 
-    // Подсветка активной секции
     const sections = document.querySelectorAll('section');
     const navLinksArray = document.querySelectorAll('.nav-link');
 
@@ -40,9 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     window.addEventListener('scroll', highlightNavLink);
-    highlightNavLink(); // Вызов при загрузке
+    highlightNavLink();
 
-    // Анимированный текст
     const typingText = document.getElementById('typing-text');
     const roles = ['Видеоинжинет', 'Data Analyst', 'Студент'];
     let roleIndex = 0;
@@ -65,27 +61,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (!isDeleting && charIndex === currentRole.length) {
             isDeleting = true;
-            typingSpeed = 1500; // Пауза перед удалением
+            typingSpeed = 1500;
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
             roleIndex = (roleIndex + 1) % roles.length;
-            typingSpeed = 500; // Пауза перед новым словом
+            typingSpeed = 500;
         }
 
         setTimeout(type, typingSpeed);
     }
 
-    // Запуск анимации через 1 секунду
     setTimeout(type, 1000);
 
-    // Валидация формы
     const contactForm = document.getElementById('contact-form');
     const formMessage = document.getElementById('form-message');
 
     contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        // Простая валидация
         const name = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
         const message = document.getElementById('message').value.trim();
@@ -100,11 +93,9 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // В реальном проекте здесь был бы AJAX-запрос
         showMessage('Сообщение отправлено! Я свяжусь с вами в ближайшее время.', 'success');
         contactForm.reset();
 
-        // Скрыть сообщение через 5 секунд
         setTimeout(() => {
             formMessage.style.display = 'none';
         }, 5000);
@@ -121,7 +112,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return emailRegex.test(email);
     }
 
-    // Плавная прокрутка для навигационных ссылок
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -139,7 +129,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Анимация при скролле
     const animateOnScroll = () => {
         const elements = document.querySelectorAll('.skill-category, .achievement-card, .project-card, .timeline-item');
 
@@ -154,5 +143,6 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll(); // Вызов при загрузке
+    animateOnScroll();
+
 });
